@@ -1,0 +1,31 @@
+
+public class Mylinklist {
+public Node list;
+
+public void add(int a){
+	Node temp;
+	if(list == null)
+	{
+	list = new Node();
+    list.a = a; 
+	}
+    else
+    {
+     temp=list;	
+     list=new Node();
+     list.a =a;
+     temp.add=list;
+     list = temp;
+     }
+    }
+public void Showall(){
+	Node temp;
+	temp=list;
+	while(temp.add!=null){
+		System.out.println(temp.a);
+		temp=temp.add;
+		
+	}
+}
+
+}
